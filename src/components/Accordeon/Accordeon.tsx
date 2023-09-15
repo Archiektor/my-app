@@ -1,14 +1,14 @@
 import React from "react";
 
-type AccordeonPropsType = {
+type AccordionPropsType = {
     title: string;
     collapsed: boolean
 }
-type AccordeonTitlePropsType = {
+type AccordionTitlePropsType = {
     title: string;
 }
 
-export function Accordeon(props: AccordeonPropsType) {
+export function Accordeon(props: AccordionPropsType) {
     const {title, collapsed} = props;
 
     if (collapsed) {
@@ -23,7 +23,7 @@ export function Accordeon(props: AccordeonPropsType) {
     }
 }
 
-const AccordeonTitle = (props: AccordeonTitlePropsType) => {
+const AccordeonTitle = (props: AccordionTitlePropsType) => {
     const {title} = props;
     return (<h3>{title}</h3>)
 }

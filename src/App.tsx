@@ -10,10 +10,10 @@ type PageTitlePropsType = {
 function App() {
     return (
         <div>
-            <PageTitle title={'This is APP Component'}/>
+            {/*<PageTitle title={'This is APP Component'}/>*/}
             <Accordeon title={'Bajan'} collapsed={false}/>
             <Accordeon title={'Garmon'} collapsed={false}/>
-            <Rating value={3}/>
+            {/*<Rating value={3}/>*/}
         </div>
     );
 }
