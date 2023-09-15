@@ -1,7 +1,6 @@
 import React from 'react';
 import './App.css';
-import {Accordeon} from "./components/Accordeon/Accordeon";
-import Rating from "./components/Rating/Rating";
+import {Accordion} from "./components/Accordeon/Accordion";
 
 type PageTitlePropsType = {
     title: string;
@@ -10,10 +9,9 @@ type PageTitlePropsType = {
 function App() {
     return (
         <div>
-            {/*<PageTitle title={'This is APP Component'}/>*/}
-            <Accordeon title={'Bajan'} collapsed={false}/>
-            <Accordeon title={'Garmon'} collapsed={false}/>
-            {/*<Rating value={3}/>*/}
+            <PageTitle title={'Something new'}/>
+            <Accordion title={'Bajan'} collapsed={false}/>
+            <Accordion title={'Garmon'} collapsed={false}/>
         </div>
     );
 }

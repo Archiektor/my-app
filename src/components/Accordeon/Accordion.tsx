@@ -8,22 +8,22 @@ type AccordionTitlePropsType = {
     title: string;
 }
 
-export function Accordeon(props: AccordionPropsType) {
+export function Accordion(props: AccordionPropsType) {
     const {title, collapsed} = props;
 
     if (collapsed) {
         return <div>
-            <AccordeonTitle title={title}/>
+            <AccordionTitle title={title}/>
         </div>
     } else {
         return <div>
-            <AccordeonTitle title={title}/>
+            <AccordionTitle title={title}/>
             <AccordeonBody/>
         </div>
     }
 }
 
-const AccordeonTitle = (props: AccordionTitlePropsType) => {
+const AccordionTitle = (props: AccordionTitlePropsType) => {
     const {title} = props;
     return (<h3>{title}</h3>)
 }
