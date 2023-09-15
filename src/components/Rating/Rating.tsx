@@ -5,7 +5,6 @@ type RatingPropsType = {
 }
 
 const Rating = (props: RatingPropsType) => {
-    const {value} = props;
 
     return (
         <div>
