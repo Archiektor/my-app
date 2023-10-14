@@ -1,24 +1,20 @@
 import React from 'react';
 import './App.css';
-import {Accordion} from "./components/Accordeon/Accordion";
+import {OnOff} from './components/OnOff/OnOff';
 
-type PageTitlePropsType = {
-    title: string;
-}
-
-function App() {
+const App = () => {
     return (
         <div>
-            <PageTitle title={'Something new'}/>
-            <Accordion title={'Bajan'} collapsed={false}/>
-            <Accordion title={'Garmon'} collapsed={false}/>
+            <OnOff on={false}/>
+            {/*<Accordion title={'Menu'} collapsed={true}/>*/}
+            {/*<Accordion title={'Users'} collapsed={false}/>*/}
+            {/*<Rating value={1}/>*/}
+            {/*<Rating value={2}/>*/}
+            {/*<Rating value={3}/>*/}
+            {/*<Rating value={4}/>*/}
+            {/*<Rating value={5}/>*/}
         </div>
     );
-}
-
-function PageTitle(props: PageTitlePropsType) {
-    const {title} = props;
-    return <h1>{title}</h1>
 }
 
 export default App;
